@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+
+.heading {
+    color: rgba(0,0,0,.85);
+    font-size: 1.1rem;
+}
+
+p {
+    color: #666;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+svg {
+    width: 1rem;
+    color: #0d6db7;
+}
+
+label {
+    color: #0d6db7;
+    font-size: .8rem;
+}
+
+select, input {
+    padding: 1rem;
+    border: 1px solid #8dc63f;
+    border-radius: 4px;
+    background: none;
+    transition: border .2s ease-in-out;
+    
+}
+
+select:focus {
+    border: 1px solid #0d6db7;
+}
+
+input:hover {
+    border: 1px solid #0d6db7;
+}
+
+option:hover{
+    background-color: red;
+}
+
+.saylani_logo {
+    width: 250px;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding: .8rem 0;
+    /* background-image: url(../images/bg.jpg);
+    background-position: top;
+    background-size: cover; */
+}
+
+.second_row {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social img {
+    width: 30px;
+}
+
+.button {
+    border: 1px solid #0d6db7;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    cursor: pointer;
+    transition: .2s border-radius ease-in-out;
+}
+
+.button:hover {
+    border-radius: 8px;
+}
+
+.button button {
+    background: none;
+    padding: .5rem .6rem;
+    border: none;
+    color: #0d6db7;
+    cursor: pointer;
+}
+
+
+.third_row {
+    text-align: center;
+}
+/* Form Container */
+
+.form_container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.form_tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.form_tabs button {
+    background: none;
+    outline: none;
+    border: none;
+    padding: .8rem;
+    border: 1px solid #f0f0f0;
+    color: #0d6db7;
+    border-bottom: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form_tabs button.active {
+    color: #8dc63f;
+}
+
+.form_group {
+    padding: 2.5rem 0;
+    border-bottom: 2px solid rgba(0, 0, 0, .06);
+
+}
+
+.input_area {
+    display: flex;
+    gap: 2rem;
+}
+
+.input_field {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.input_field_full{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.input_field_pic{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.instructions {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.instructions ol li {
+    color: #666;
+    line-height: 1.5rem;
+    margin-top: .3rem;
+    font-weight: lighter;
+}
+
+.final_btn {
+    padding: 2.5rem 0;
+}
+
+.submit_button {
+    background: none;
+    background-color: #0d6db7;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: opacity .3s ease-in-out;
+}
+
+.submit_button:hover {
+    opacity: 0.8;
+}
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  .second_row {
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .input_field, .input_field_pic {
+    width: 100%;
+  }
+
+  .input_area {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 577px) {
+    .social {
+      order: 3;
+    }
+    
+    .heading {
+        order: 2;
+    }
+
+    .button {
+        order: 1;
+    }
+  }
