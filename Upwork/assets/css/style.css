@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ==== Navbar Start ==== */
+
+.hamburgur svg {
+    width: 1.6rem;
+}
+
+.logo svg {
+    width: 5rem;
+}
+
+header {
+    padding: .5rem 1rem;
+    box-shadow: 0 0 0 1px #d9d9d9;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+.nav_mobile {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.nav_mobile svg {
+    width: 1.6rem;
+}
+
+
+.nav_mobile button:first-child {
+    padding: 8px 20px;
+    background-color: #108A00;
+    border: none;
+    border-radius: 12px;
+    transition: background-color .1s ease-in-out;
+}
+
+.nav_mobile button:first-child:hover {
+    background-color: #14a800;
+}
+
+.nav_mobile button:last-child {
+    background: none;
+    border: none;
+    display: none;
+}
+
+.nav_mobile button:last-child a {
+    color: #181818;
+}
+
+.nav_mobile button a {
+    color: white;
+    font-size: 1rem;
+}
+
+.nav_links {
+    display: none;
+}
+
+/* ==== Navbar End ==== */
+
+
+/* ==== Responsive ==== */
+
+@media only screen and (min-width: 992px){
+    
+    .hamburgur {
+        display: none;
+    }
+
+    .nav_links {
+        display: block;
+    }
+
+    nav div:first-child {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .nav_mobile {
+        gap: 1rem;
+    }
+
+    .nav_mobile button:last-child {
+        order: 1;
+        display: block;
+    }
+
+    .nav_mobile button:first-child {
+        order: 3;
+    }
+
+    .nav_mobile svg {
+        order: 1;
+    }
+
+    .nav_links ul {
+        display: flex;
+        gap: 1.2rem;
+    }
+
+    .nav_links ul li {
+        display: flex;
+        gap: .2rem;
+    }
+
+    .nav_links ul li a {
+        font-size: 14px;
+        color: #181818;
+        transition: color ease-in-out;
+    }
+
+    .nav_links ul li a:hover {
+        color: #108A00;
+    }
+
+    .nav_links ul li svg {
+        width: 1rem;
+        color: #181818;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    nav {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+}
